@@ -18,7 +18,8 @@ const App = () => {
   controls={{ autoRotate: true, autoRotateSpeed: 3 }}
   camera={{ position: [0, 2, 5], fov: 50 }}
   debug={true}
-  changeAllMeshes={true}
+  changeAllMeshes={false}
+  targetMeshes={["Mesh_7","Mesh_3"]}
 />
 
     <ModelViewer 
