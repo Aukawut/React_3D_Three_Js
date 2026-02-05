@@ -90,6 +90,39 @@ const App = () => {
       debug={true}
       changeAllMeshes={true}
     />
+     <ModelViewer 
+      modelUrl="/models/9y0054-0lb.glb"
+      modelColor="#524a9f"
+      width={500}
+      height={500}
+      environmentPreset="sunset"
+      controls={{ autoRotate: true, autoRotateSpeed: 3 }}
+      camera={{ position: [0, 2, 5], fov: 50 }}
+      debug={true}
+      changeAllMeshes={true}
+    />
+     <ModelViewer 
+      modelUrl="/models/rt1826-0lb.glb"
+      modelColor="#777777"
+      width={500}
+      height={500}
+      environmentPreset="sunset"
+      controls={{ autoRotate: true, autoRotateSpeed: 3 }}
+      camera={{ position: [0, 2, 5], fov: 50 }}
+      debug={true}
+      changeAllMeshes={true}
+    />
+     <ModelViewer 
+      modelUrl="/models/rw0001-0lb.glb"
+      modelColor="#777777"
+      width={500}
+      height={500}
+      environmentPreset="sunset"
+      controls={{ autoRotate: true, autoRotateSpeed: 3 }}
+      camera={{ position: [0, 2, 5], fov: 50 }}
+      debug={true}
+      changeAllMeshes={true}
+    />
     </div>
   )
 }
