@@ -11,7 +11,7 @@ const App = () => {
       {/* ตัวอย่างการใช้งาน ModelViewer แบบ Reusable */}
     <ModelViewer 
   modelUrl="/models/1c0001-0lb.glb  "
-  modelColor="#777777"
+  modelColor="red"
   width={500}
   height={500}
   environmentPreset="sunset"
@@ -19,7 +19,7 @@ const App = () => {
   camera={{ position: [0, 2, 5], fov: 50 }}
   debug={true}
   changeAllMeshes={false}
-  targetMeshes={["Mesh_7","Mesh_3"]}
+  targetMeshes={["Mesh_7","Mesh_6"]}
 />
 
     <ModelViewer 
@@ -65,7 +65,8 @@ const App = () => {
       controls={{ autoRotate: true, autoRotateSpeed: 3 }}
       camera={{ position: [0, 2, 5], fov: 50 }}
       debug={true}
-      changeAllMeshes={true}
+      changeAllMeshes={false}
+      targetMeshes={["Mesh_0"]}
     />
 
     <ModelViewer 
@@ -82,14 +83,15 @@ const App = () => {
 
      <ModelViewer 
       modelUrl="/models/7t0456-0lb.glb"
-      modelColor="#a96148"
+      modelColor="blue"
       width={500}
       height={500}
       environmentPreset="sunset"
       controls={{ autoRotate: true, autoRotateSpeed: 3 }}
       camera={{ position: [0, 2, 5], fov: 50 }}
       debug={true}
-      changeAllMeshes={true}
+      changeAllMeshes={false}
+      targetMeshes={["7T8209-11(______)-1","7TA456-02-1-1"]}
     />
      <ModelViewer 
       modelUrl="/models/9y0054-0lb.glb"
@@ -100,7 +102,8 @@ const App = () => {
       controls={{ autoRotate: true, autoRotateSpeed: 3 }}
       camera={{ position: [0, 2, 5], fov: 50 }}
       debug={true}
-      changeAllMeshes={true}
+      targetMeshes={["Mesh_1"]}
+      changeAllMeshes={false}
     />
      <ModelViewer 
       modelUrl="/models/rt1826-0lb.glb"
@@ -122,7 +125,7 @@ const App = () => {
       controls={{ autoRotate: true, autoRotateSpeed: 3 }}
       camera={{ position: [0, 2, 5], fov: 50 }}
       debug={true}
-      changeAllMeshes={true}
+      changeAllMeshes={false}
     />
     </div>
   )
