@@ -8,6 +8,17 @@ preloadModel("/models/1c0002-0lb.glb");
 const App = () => {
   return (
     <div className='grid gap-8 p-8 md:grid-cols-4 justify-items-center'>
+       <ModelViewer 
+    modelUrl="/models/prospira2.glb"
+    width={500}
+  height={500}
+    environmentPreset="sunset"
+    controls={{ autoRotate: true, autoRotateSpeed: 2 }}
+    camera={{ position: [0, 2, 5], fov: 40 }}
+    debug={true}
+    changeAllMeshes={false}
+  />
+
       {/* ตัวอย่างการใช้งาน ModelViewer แบบ Reusable */}
     <ModelViewer 
   modelUrl="/models/1c0001-0lb.glb  "
